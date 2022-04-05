@@ -1,16 +1,18 @@
+import { Html, Head,Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
   render() {
     return (
-      <html>
-        <header>
+      <Html>
+        <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-        </header>
+        </Head>
         <body>
-          
+          <Main/>
+          <NextScript/>
         </body>
-      </html>
+      </Html>
     )
   }
 }
