@@ -6,13 +6,13 @@
 .headerContent {
   max-width: auto;
   height: 5rem;
-  margin: 5 auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
 
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 
   nav {
+    padding: 0 10rem;
    @media (max-width: 800px) {
       margin-left: 1rem;
       height: 5rem;

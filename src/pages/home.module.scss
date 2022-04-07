@@ -10,7 +10,6 @@
 }
 
 .hero {
-  max-width: 600px;
 
   > span {
     font-size: 1.5rem;
@@ -18,28 +17,19 @@
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 2rem;
     line-height: 4.5rem;
     font-weight: 900;
-    margin-top: 2.5rem;
-
-    span {
-      color: var(--roxo);
-    }
   }
 
   p {
-    font-size: 1.5rem;
-    line-height: 5.25rem;
-    margin-top: 1.5rem;
-
-    span {
-      color: var(--cyan-500);
-      font-weight: bold;
-    }
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-right: 10rem;
   }
 
   button {
+   margin-top: 2rem;
    height: 4rem;
    width: 14rem;
  
@@ -59,15 +49,16 @@
  
    @keyframes border {
      0% {
-       border: 1px solid var(--roxo);
+       border: 1px solid var(--white);
      }
      100% {
-       border: 1px solid var(--roxo);
+       border: 1px solid var(--white);
      }
    }
  
    &:hover {
-     background: var(--roxo);
+     background: var(--white);
+     color: var(--black);
      filter: brightness(0.9);
    }
   }
