@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import styles from './home.module.scss';
+import styles from './styles.module.scss';
 
-export default function Home() {
+export default function About() {
    return (
       <>
          <Head>
-            <title>Home</title>
+            <title>About | Web</title>
          </Head>
 
          <main className={styles.contentContainer}>
@@ -15,7 +15,6 @@ export default function Home() {
                <p>Este site foi construido por alunos de ciencias da computacao da universidade catolica, com ituito de ajudar outros alunos na sua carreira, aqui veremos o basico em logica de programacao, html, css e java script, alem de um guia de carreira para que voce possa ir alem e possa crescer na sua carreira</p>
                
                <a href="/Aulas"><button className={styles.button}>Inicar Curso</button></a>
-               <a href="/web/about"><button className={styles.buttonActive}>Saiba mais</button></a>
             </section>
             <aside className={styles.lottie}>
                <img src='/images/computador-hello-world.svg' alt="devLearning" />
