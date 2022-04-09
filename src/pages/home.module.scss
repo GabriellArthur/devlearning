@@ -33,7 +33,7 @@
    height: 4rem;
    width: 14rem;
  
-   margin-left: 1.4rem;
+   margin-right: 1.4rem;
 
    border: 3px solid;
    border-radius: 0.5rem;
@@ -73,7 +73,7 @@
    display: flex;
    justify-content: center;
    height: 2rem;
-   width: 70%;
+   width: 80%;
    border-bottom: 1px solid var(--linha);
    margin: auto;
 }
@@ -85,4 +85,13 @@
    position:absolute;
 	bottom:0;
 	width:100%;
+}
+
+.footer h2{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.055em;
 }

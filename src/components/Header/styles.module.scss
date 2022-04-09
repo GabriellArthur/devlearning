@@ -3,6 +3,10 @@
   border-bottom: 1px solid var(--gray-800);
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .headerContent {
   max-width: auto;
   height: 5rem;
