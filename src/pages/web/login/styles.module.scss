@@ -1,0 +1,117 @@
+.contentContainer {
+    max-width: 1400px;
+    margin: auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        color: #FFFFFF;
+        margin-bottom: 35px;
+    }
+
+    .box__text {
+        max-width: 550px;
+        padding: 1rem;
+    }
+
+    .box__form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn__login {
+        width: 194px;
+        height: 56px;
+        border: 1px solid #43AC93;
+        border-radius: 10px;
+        background: none;
+        color: #43AC93;
+    }
+
+    .btn__login:hover {
+        transition: .3s;
+        background: #43AC93;
+        color: black;
+    }
+
+    .input__values {
+        text-align: left;
+        width: 427px;
+        height: 56px;
+        background: none;
+        border: 2px solid #6CABA3;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        padding: 1rem;
+        color: white;
+    }
+
+    .input__values:focus {
+        border: none;
+    }
+
+    .box__text h1{
+        font-family: 'Segoe UI';
+        font-weight: 700;
+        font-size: 48px;
+        color: #E7FFF5;
+    }
+
+    .box__text h2{
+        font-family: 'Segoe UI';
+        font-weight: 700;
+        font-size: 48px;
+        color: #7EAF9B;
+    }
+
+    .box__text p{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        color: #8EAEA6;
+    }
+
+    .box__text span{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #72F7DF;
+    }
+
+
+}
+
+.body {
+    min-height: calc(80vh - 1rem);
+    display: grid;
+    align-items: center;
+}
+
+.card__login {
+    height: auto;
+    border: 1px solid #b1fff120;
+    border-radius: 25px;
+    margin: 1rem;
+    padding: 3em 3em 3em 3em;
+}
+ 
+.footer{
+    padding: 20px;  
+    display: flex;
+    justify-content: center;
+}
+.footer h2{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.055em;
+}

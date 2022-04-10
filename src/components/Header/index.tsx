@@ -8,16 +8,16 @@ export function Header() {
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
          <Link href="/">
-            <img src='/images/devLearning.svg' alt="devLearning" />
+            <img className={styles.logo} src='/images/devLearning.svg' alt="devLearning" />
          </Link>
         <nav>
           <ActiveLink href='/' activeClassName={styles.active}>
             <a>Home</a>
           </ActiveLink>
-          <ActiveLink href='/aulas' activeClassName={styles.active}>
+          <ActiveLink href='/web/class' activeClassName={styles.active}>
             <a>Aulas</a>
           </ActiveLink>
-          <ActiveLink href='/Login' activeClassName={styles.active}>
+          <ActiveLink href='/web/login' activeClassName={styles.active}>
             <a>Login</a>
           </ActiveLink>
 
