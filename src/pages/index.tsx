@@ -14,7 +14,7 @@ export default function Home() {
                <span>Aprenda o basico para criar o seu primeiro site</span>
                <p>Este site foi construido por alunos de ciencias da computacao da universidade catolica, com ituito de ajudar outros alunos na sua carreira, aqui veremos o basico em logica de programacao, html, css e java script, alem de um guia de carreira para que voce possa ir alem e possa crescer na sua carreira</p>
                
-               <a href="/Aulas"><button className={styles.button}>Inicar Curso</button></a>
+               <a href="/web/class"><button className={styles.button}>Inicar Curso</button></a>
                <a href="/web/about"><button className={styles.buttonActive}>Saiba mais</button></a>
             </section>
             <aside className={styles.lottie}>
