@@ -24,7 +24,7 @@ export default function Register () {
                         <label>Email</label>
                         <br />
                         <br />
-                        <input type='email' placeholder='usuario@gmail.com'></input>
+                        <input type='email' placeholder='user@gmail.com'></input>
                     </div>
                     <div className={styles.box_input}>
                         <label>Password</label>
@@ -32,9 +32,26 @@ export default function Register () {
                         <br />
                         <input type='password' placeholder='********'></input>
                     </div>
+                    <p className={styles.text__checklist}>Seus conhecimentos</p>
+                    <div className={styles.checklist}>
+                        <div className={styles.checkbox}>
+                            <input type = "checkbox" id = "html" name = "experiencia" value = "html"></input>
+                            <label> Html </ label>
+                        </div>
+                        <div className={styles.checkbox}>
+                            <input type = "checkbox" id = "css" name = "experiencia" value = "css"></input>
+                            <label> CSS </ label>
+                        </div>
+                        <div className={styles.checkbox}>
+                            <input type = "checkbox" id = "javaScript" name = "experiencia" value = "javaScript"></input>
+                            <label> JavaScript </ label>
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.line}></div>
-                <button className={styles.confirm}>Confirmar</button>
+                <div className={styles.box__confirm}>
+                    <button className={styles.confirm}>Confirmar</button>
+                </div>
             </form>
         </div>
     )

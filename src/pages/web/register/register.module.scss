@@ -1,11 +1,11 @@
 .body__register {
     height: calc(100vh - 2rem);
+    display: flex;
+    justify-content: center;
 }
 
 .form__register {
     height: 100%;
-    width: 1096px;
-    // background-color: rgba(113, 113, 113, 0.207);
     padding: 1rem;
 }
 
@@ -20,18 +20,17 @@
 
 .box_input {
     padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    width: 100%;
 }
 
 .box_input label{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
     font-size: 18px;
 }
 
 .box_input input{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    width: 500px;
+    width: 100%;
     height: 45px;
     border-radius: 5px;
     border: solid rgb(200, 200, 200);
@@ -39,21 +38,46 @@
 }
 
 .box_input input:focus {
-    border: none;
+    border: solid rgb(200, 200, 200);
+    outline: 0;
 }
 
 
 .box__names {
+    min-width: 400px;
+    width: 50vw;
     display: flex;
 }
 
-.box__login input{
+.box__login {
     width: 100%;
 }
 
+.box__confirm {
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.text__checklist {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.checklist {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+}
+
+.checkbox {
+    margin-right: 2rem;
+}
+
 .confirm {
-    margin: 1rem;
-    width: 50%;
+    width: 100%;
     height: 44px;
     border-radius: 10px;
     border: none;
