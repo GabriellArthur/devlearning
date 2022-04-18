@@ -2,11 +2,14 @@
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 2rem;
-  height: calc(80vh - 4rem);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.bodyContainer {
+  min-height: 80vh;
+  display: grid;
 }
 
 .hero {
@@ -79,12 +82,9 @@
 }
 
 .footer{
-   padding: 20px;
-   display: flex;
-   justify-content: center;
-   position:absolute;
-	bottom:0;
-	width:100%;
+  padding: 20px;  
+  display: flex;
+  justify-content: center;
 }
 
 .footer h2{

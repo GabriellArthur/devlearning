@@ -1,9 +1,13 @@
+import Head from 'next/head';
 import Link from 'next/link'
 import styles from './styles.module.scss'
 
 export default function Login () {
     return (
         <>
+        <Head>
+            <title>Login</title>
+        </Head>
         <div className={styles.body}>        
                 <div className={styles.card__login}>
                     <main className={styles.contentContainer}>

@@ -1,7 +1,12 @@
+import Head from 'next/head'
 import styles from './register.module.scss'
 
 export default function Register () {
     return (
+        <>
+        <Head>
+            <title>Register</title>
+        </Head>
         <div className={styles.body__register}>
             <form className={styles.form__register}>
                 <div className={styles.box__names}>
@@ -54,5 +59,6 @@ export default function Register () {
                 </div>
             </form>
         </div>
+        </>
     )
 }
