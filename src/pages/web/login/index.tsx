@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './styles.module.scss'
 
 export default function Login () {
@@ -19,7 +20,7 @@ export default function Login () {
                                 <br></br>
                                 <input placeholder="Password" type="password" className={styles.input__values}/>
                                 <br></br>
-                                <button className={styles.btn__login}>LOGIN</button>
+                                <button className={styles.btn__login}><Link href='/web/register'>LOGIN</Link></button>
                             </div>
                         </div>
                     </main>
