@@ -28,15 +28,15 @@
     .btn__login {
         width: 194px;
         height: 56px;
-        border: 1px solid #7771cf;
+        border: 1px solid #2669bf;
         border-radius: 10px;
         background: none;
-        color: #7771cf;
+        color: #2669bf;
     }
 
     .btn__login:hover {
         transition: .3s;
-        background: #7771cf;
+        background: #2669bf;
         color: black;
     }
 
@@ -45,7 +45,7 @@
         width: 427px;
         height: 56px;
         background: none;
-        border: 2px solid #7771cf;
+        border: 2px solid #2669bf;
         border-radius: 10px;
         margin-bottom: 40px;
         padding: 1rem;
@@ -67,14 +67,14 @@
         font-family: 'Segoe UI';
         font-weight: 700;
         font-size: 48px;
-        color: #7771cf;
+        color: #2669bf;
     }
 
     .box__text p{
         font-family: 'Roboto';
         font-weight: 400;
         font-size: 18px;
-        color: #7771cf;
+        color: #2669bf;
     }
 
     .box__text span{
@@ -82,7 +82,17 @@
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        color: #7771cf;
+        color: #1c549e;
+    }
+    .box_register {
+        margin-top: 2rem;
+        .text__register {
+            color: rgb(84, 84, 84);
+        }
+
+        .link__register {
+            color: #3c69a3;
+        }
     }
 
 

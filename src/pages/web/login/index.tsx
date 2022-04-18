@@ -20,7 +20,11 @@ export default function Login () {
                                 <br></br>
                                 <input placeholder="Password" type="password" className={styles.input__values}/>
                                 <br></br>
-                                <button className={styles.btn__login}><Link href='/web/register'>LOGIN</Link></button>
+                                <button className={styles.btn__login}><Link href='/'>LOGIN</Link></button>
+                                <br></br>
+                                <div className={styles.box_register}>
+                                    <div className={styles.text__register}>Not registered yet?<Link href='/web/register'><a className={styles.link__register}> Create a Account</a></Link></div>
+                                </div>
                             </div>
                         </div>
                     </main>
