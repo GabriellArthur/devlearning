@@ -1,8 +1,12 @@
+import Head from 'next/head';
 import styles from './styles.module.scss';
 
 export default function Class () {
     return (
         <>
+        <Head>
+            <title>Aulas</title>
+        </Head>
         <div className={styles.class}>
             <div className={styles.header__title}>
                 <h1 className={styles.title}>Cursos</h1>
