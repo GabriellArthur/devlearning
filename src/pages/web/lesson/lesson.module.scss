@@ -44,29 +44,48 @@
 .video {
     height: 400px;
     width: 700px;
-    background-color: rgb(233, 69, 69);
-    padding: 1rem;
+    background-color: rgb(190, 188, 188);
 }
 
 .content {
     display: grid;
-    justify-content: center;    
+    justify-content: center;
     h3 {
+        text-align: left;
         font-size: 25px;
         margin-bottom: 1rem;
     }
     
     p {
-        width: 800px;
+        max-width: 900px;
         margin-bottom: 3rem;
     }
 }
 
-.chat {
-    background-color: whitesmoke;
-    border-radius: 5px;
-    height: 300px;
-    margin-left: 180px;
-    margin-right: 180px;
-    margin-bottom: 3rem;
+.box__chat {
+    display: flex;
+    justify-content: center;
+    .chat {
+        background-color: rgb(36, 36, 36);
+        border-radius: 5px;
+        height: 300px;
+        width: 1000px; 
+        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+
+        img {
+            width: 150px;
+            border-radius: 100%;
+        }
+        .chat_2 {
+            background-color: rgba(255, 255, 255, 0.186);
+            border-radius: 3px;
+            width: 95%;
+            height: 90%;
+        }
+    }
 }

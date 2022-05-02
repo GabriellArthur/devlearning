@@ -12,10 +12,10 @@ export default function Login () {
                 <div className={styles.card__login}>
                     <main className={styles.contentContainer}>
                         <section className={styles.box__text}>
-                        <span>Hi, Welcome</span>
-                        <h1>Make login to use this Web Site</h1>
-                        <h2>From student to student</h2>
-                        <p>This site was built to help other students in their careers.</p>
+                            <span>Hi, Welcome</span>
+                            <h1>Make login to use this Web Site</h1>
+                            <h2>From student to student</h2>
+                            <p>This site was built to help other students in their careers.</p>
                         </section>
                         <div>
                             <div className={styles.box__form}>
