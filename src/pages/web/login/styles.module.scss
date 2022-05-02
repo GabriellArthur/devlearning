@@ -1,103 +1,13 @@
-.contentContainer {
-    max-width: 1400px;
-    margin: auto;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .title {
-        font-family: 'Segoe UI';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        color: #FFFFFF;
-        margin-bottom: 35px;
-    }
-
-    .box__text {
-        max-width: 550px;
-        padding: 1rem;
-    }
-
-    .box__form {
-        width: 100%;
-        text-align: center;
-    }
-
-    .btn__login {
-        width: 194px;
-        height: 56px;
-        border: 1px solid #2669bf;
-        border-radius: 10px;
-        background: none;
-        color: #2669bf;
-    }
-
-    .btn__login:hover {
-        transition: .3s;
-        background: #2669bf;
-        color: black;
-    }
-
-    .input__values {
-        text-align: left;
-        width: 427px;
-        height: 56px;
-        background: none;
-        border: 2px solid #2669bf;
-        border-radius: 10px;
-        margin-bottom: 40px;
-        padding: 1rem;
-        color: white;
-    }
-
-    .input__values:focus {
-        border: 2px solid #b0bdcd;
-        outline: 0;
-    }
-
-    .box__text h1{
-        font-family: 'Segoe UI';
-        font-weight: 700;
-        font-size: 48px;
-        color: #E7FFF5;
-    }
-
-    .box__text h2{
-        font-family: 'Segoe UI';
-        font-weight: 700;
-        font-size: 48px;
-        color: #2669bf;
-    }
-
-    .box__text p{
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 18px;
-        color: #2669bf;
-    }
-
-    .box__text span{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        color: #1c549e;
-    }
-    .box_register {
-        margin-top: 2rem;
-        .text__register {
-            color: rgb(84, 84, 84);
-        }
-
-        .link__register {
-            color: #3c69a3;
-        }
-    }
-
-
-}
+$color-white-1: #FFFFFF;
+$color-white-2: #f1f1f1;
+$color-white-3: #e5e5e5;
+$color-grey-1: #4a4a4a;
+$color-blue-1: #03045e;
+$color-blue-2: #023e8a;
+$color-blue-3: #0077b6;
+$color-blue-4: #0096c7;
+$color-blue-5: #00b4d8;
+$color-blue-6: #48cae4;
 
 .body {
     min-height: calc(80vh - 1rem);
@@ -107,22 +17,123 @@
 
 .card__login {
     height: auto;
-    border: 1px solid #746ee738;
+    border: 1px solid $color-grey-1;
     border-radius: 25px;
     margin: 1rem;
     padding: 3em 3em 3em 3em;
 }
- 
+
+.contentContainer {
+    max-width: 1400px;
+    margin: auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .box__text {
+        max-width: 550px;
+        padding: 1rem;
+
+        h1{
+            font-family: 'Segoe UI';
+            font-weight: 700;
+            font-size: 48px;
+            color: $color-white-3;
+        }
+        
+        h2{
+            font-family: 'Segoe UI';
+            font-weight: 700;
+            font-size: 48px;
+            color: $color-white-3;
+        }
+    
+        p{
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 18px;
+            color: $color-white-3;
+        }
+    
+        span{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: $color-white-3;
+        }
+    }
+
+    .box__form {
+        width: 100%;
+        text-align: center;
+        .title {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            color: $color-white-1;
+            margin-bottom: 35px;
+        }
+    
+        .btn__login {
+            width: 194px;
+            height: 56px;
+            border: 1px solid $color-blue-4;
+            border-radius: 10px;
+            background: none;
+            color: $color-blue-5;
+        }
+    
+        .btn__login:hover {
+            transition: .2s;
+            background: $color-blue-3;
+            color: white !important;
+        }
+    
+        .input__values {
+            text-align: left;
+            width: 427px;
+            height: 56px;
+            background: none;
+            border: 2px solid $color-blue-3;
+            outline: 0;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            padding: 1rem;
+            color: $color-white-1;
+        }
+    
+        .input__values:focus {
+            border: 2px solid $color-white-2;
+            outline: 0;
+        }
+    
+    
+        .box_register {
+            margin-top: 2rem;
+            .text__register {
+                color: rgb(84, 84, 84);
+            }
+    
+            .link__register {
+                color: $color-blue-5;
+            }
+        }
+    }
+}
+
 .footer{
     padding: 20px;  
     display: flex;
     justify-content: center;
-}
-.footer h2{
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.5);
-    font-family: 'Segoe UI';
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.055em;
+    h2 {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'Segoe UI';
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.055em;
+    }
 }
