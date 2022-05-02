@@ -1,0 +1,72 @@
+.bodyLesson {
+    min-height: 100vh;
+}
+
+.header__banner {
+    height: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header__box {
+        width: 70vw;
+        h1 {
+            font-size: 46px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+            text-transform: uppercase;
+        }
+        
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.434);
+}
+
+.box__video {
+    display: grid;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.video {
+    height: 400px;
+    width: 700px;
+    background-color: rgb(233, 69, 69);
+    padding: 1rem;
+}
+
+.content {
+    display: grid;
+    justify-content: center;    
+    h3 {
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        width: 800px;
+        margin-bottom: 3rem;
+    }
+}
+
+.chat {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    height: 300px;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 3rem;
+}
