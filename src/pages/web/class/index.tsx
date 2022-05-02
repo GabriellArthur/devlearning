@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from './styles.module.scss';
 
 export default function Class () {
@@ -17,7 +18,7 @@ export default function Class () {
                     <div className={styles.desc__class}>
                         <h2>Logica de programacao</h2>
                         <p>A lógica de programação é a maneira como se escreve um algoritmo, que nada mais é do que uma sequência de passos necessários, para que uma função seja executada.</p>
-                        <a href="/web/class"><button className={styles.button}>ACESSAR CURSO</button></a>
+                        <a href="/web/lesson"><button className={styles.button}><Link href="/web/class/lesson">ACESSAR CURSO</Link></button></a>
                     </div>
                     <div className={styles.img__class}>
                         <img src="https://blog.dankicode.com/wp-content/uploads/2019/08/logica-de-programac%CC%A7a%CC%83o-para-iniciantes-380x249.png" alt="logica de programacao" />
