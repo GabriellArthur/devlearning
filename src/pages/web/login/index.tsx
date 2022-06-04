@@ -30,6 +30,12 @@ export default function Login () {
                                 <br></br>
                                 <div className={styles.box_register}>
                                     <div className={styles.text__register}>Not registered yet?<Link href='/web/register'><a className={styles.link__register}> Create a Account</a></Link></div>
+                                    <br />
+                                    <div>
+                                        <a href='/web/login' className={styles.text__forgot__password}>
+                                            Forgot a password?
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

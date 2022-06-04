@@ -61,7 +61,7 @@ export default function Class () {
             <div className={styles.header__class}>
                     <ul>
                         <li>
-                            <a><button className={styles.button__new}><Link href="/web/newClass">CRIAR CURSO</Link></button></a>
+                            <a href="/web/newClass"><button className={styles.button__new}>CRIAR CURSO</button></a>
                         </li>
                     </ul>
                 </div>

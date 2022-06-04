@@ -37,7 +37,20 @@ export default function Register () {
                             <br />
                             <input type='password' placeholder='********'></input>
                         </div>
-                        <p className={styles.text__checklist}>Seus conhecimentos</p>
+                        <div className={styles.box_input}>
+                            <label>Phone number</label>
+                            <br />
+                            <br />
+                            <input type='tel' id="phone" name="phone" placeholder='(00) 00000-0000' pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></input>
+                        </div>
+                        <div className={styles.checklist}>
+                            <div className={styles.checkbox}>
+                                    <input type = "checkbox" id = "html" name = "experiencia" value = "html"></input>
+                                    <label> I agree to the <a className={styles.link} href='/'>terms & conditions</a></ label>
+                            </div>
+                        </div>
+
+                        {/* <p className={styles.text__checklist}>Seus conhecimentos</p>
                         <div className={styles.checklist}>
                             <div className={styles.checkbox}>
                                 <input type = "checkbox" id = "html" name = "experiencia" value = "html"></input>
@@ -51,7 +64,7 @@ export default function Register () {
                                 <input type = "checkbox" id = "javaScript" name = "experiencia" value = "javaScript"></input>
                                 <label> JavaScript </ label>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={styles.line}></div>
                     <div className={styles.box__confirm}>

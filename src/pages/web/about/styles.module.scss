@@ -1,94 +1,152 @@
 .contentContainer {
-   max-width: 1120px;
-   margin: 0 auto;
-   padding: 0 2rem;
-   height: calc(80vh - 4rem);
- 
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
- }
- 
- .hero {
- 
-   > span {
-     font-size: 1.5rem;
-     font-weight: bold;
-   }
- 
-   h1 {
-     font-size: 2rem;
-     line-height: 4.5rem;
-     font-weight: 900;
-   }
- 
-   p {
-     font-size: 15px;
-     margin-top: 1rem;
-     margin-right: 10rem;
-   }
- 
-   button {
-    margin-top: 2rem;
-    height: 4rem;
-    width: 14rem;
-  
-    margin-right: 1.4rem;
- 
-    border: 3px solid;
-    border-radius: 0.5rem;
-    background: var(--blue);
-  
-    color: var(--white);
-  
-    font-size: 1.5rem;
-  
-    transition: 0.4s;
-  
-    animation: border 0.5s infinite;
-  
-    @keyframes border {
-      0% {
-        border: 1px solid var(--blue);
-      }
-      100% {
-        border: 1px solid var(--blue);
-      }
-    }
-  
-    &:hover {
-      background: var(--blue);
-      color: var(--white);
-      filter: brightness(0.9);
-    }
-   }
- }
- 
- .lottie{
-    height: 0 auto;
-    width: 30rem;
- }
- 
- .linha{
-  display: flex;
-  justify-content: center;
-  height: 2rem;
-  width: 80%;
-  border-bottom: 1px solid var(--linha);
+  max-width: 1120px;
   margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+.contentContainerTeam {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  .grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  .grid .card_team {
+    background-color: rgb(26, 26, 26);
+    width: 200px;
+    height: 270px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    .img {
+      width: 200px;
+      height: 200px;
+      border-radius: 5px 5px 0px 0px;
+      object-fit: cover;
+    }
+
+    .text {
+      text-align: center;
+      padding: 1rem 0px;
+    }
+    &:hover {
+      transition: .2s;
+      box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+.bodyContainer {
+  min-height: 80vh;
+}
+
+@media (max-width: 900px) { 
+  .img {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) { 
+  .img {
+    height: 320px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .img {
+    height: 420px;
+  }
+}
+  
+.hero {
+
+  > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-right: 10rem;
+  }
+
+  button {
+   margin-top: 2rem;
+   height: 4rem;
+   width: 14rem;
+ 
+   margin-right: 1.4rem;
+
+   border: 3px solid;
+   border-radius: 0.5rem;
+   background: transparent;
+ 
+   color: #fff;
+ 
+   font-size: 1.5rem;
+ 
+   transition: 0.4s;
+ 
+   animation: border 0.5s infinite;
+ 
+   @keyframes border {
+     0% {
+       border: 1px solid var(--white);
+     }
+     100% {
+       border: 1px solid var(--white);
+     }
+   }
+ 
+   &:hover {
+     background: var(--white);
+     color: var(--black);
+     filter: brightness(0.9);
+   }
+  }
+}
+
+.lottie{
+   height: 0 auto;
+   width: 30rem;
+}
+
+.linha{
+   display: flex;
+   justify-content: center;
+   height: 2rem;
+   width: 80%;
+   border-bottom: 1px solid var(--linha);
+   margin: auto;
 }
 
 .footer{
- padding: 20px;  
- display: flex;
- justify-content: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer h2{
- font-size: 1rem;
- color: rgba(255, 255, 255, 0.5);
- font-family: 'Segoe UI';
- font-weight: 400;
- line-height: 21px;
- letter-spacing: 0.055em;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.055em;
 }
