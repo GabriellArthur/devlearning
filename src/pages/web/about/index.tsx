@@ -11,7 +11,7 @@ export default function About() {
             <div className={styles.contentContainer}>
                <section className={styles.hero}>
                   <h1>Bem vindo ao DEV LEARNING</h1>
-                  <span>Um pouco sobre a ideia do site</span>
+                  <span>Um pouco sobre o desenvolvimento do site</span>
                   <p>Este site foi construido por alunos de ciencias da computacao da universidade catolica, com ituito de ajudar outros alunos na sua carreira, aqui veremos o basico em logica de programacao, html, css e java script, para que voce possa crescer na sua carreira</p>
                   <p>Tecnologias usadas:</p>
                   <p>React.js, Next.js, Node.js, MongoDB, Figma</p>
