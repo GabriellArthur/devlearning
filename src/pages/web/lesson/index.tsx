@@ -1,29 +1,36 @@
 import styles from './lesson.module.scss'
 
 export default function Lesson () {
-    const title = 'LOGICA DE PROGRAMAÇÃO'
+    const content = {
+        title: 'LOGICA DE PROGRAMAÇÃO',
+        subTitle: 'Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo',
+        titleText: '#1 - SOBRE O CURSO',
+        media: 'https://miro.medium.com/max/1000/1*8Uv7_YTCQxyLzrev7rKiDw.jpeg',
+        text: 'Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo'
+    }
     return (
         <>
             <div className={styles.bodyLesson}>
                 <div className={styles.header__banner}>
                     <div className={styles.header__box}>
-                        <h1>{title}</h1>
+                        <h1>{content.title}</h1>
                         <br></br>
-                        <p>Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo</p>
+                        <p>{content.subTitle}</p>
                     </div>
                 </div>
                 <div className={styles.line}></div>
-                <div className={styles.box__video}>
-                    <div className={styles.video}>
-                        video
+                <div className={styles.box__media}>
+                    <div className={styles.media}>
+                        <img src={content.media} alt={content.titleText} />
                     </div>
                 </div>
                 <div className={styles.content}>
-                    <h3>#1 - SOBRE O CURSO</h3>
-                    <p> Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo
-                        Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo
-                        Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo Aprenda a logica por traz dos algoritimos, como os sistemas sao criados, um pouco de estrutura de repetição, condicional, variaveis, tipos de variaveis, otimização e o peso computacinal de um algoritimo
+                    <div className={styles.text}>
+                    <h3>{content.titleText}</h3>
+                    <p>
+                        {content.text}
                     </p>
+                    </div>
                 </div>
                 <div className={styles.box__chat}>
                     <div className={styles.chat}>
