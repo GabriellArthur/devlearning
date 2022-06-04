@@ -3,11 +3,12 @@
 }
 
 .header__banner {
-    height: 230px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 25px 0px 25px 0px;
     .header__box {
         width: 70vw;
         h1 {
@@ -34,17 +35,26 @@
     background-color: rgba(128, 128, 128, 0.434);
 }
 
-.box__video {
+.box__media {
     display: grid;
     justify-content: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
-.video {
+.text {
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.media {
     height: 400px;
     width: 700px;
-    background-color: rgb(190, 188, 188);
+}
+
+.media img{
+    object-fit: cover;
+    height: 400px;
+    width: 700px;
 }
 
 .content {
