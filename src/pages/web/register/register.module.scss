@@ -76,6 +76,12 @@
     margin-right: 2rem;
 }
 
+.link {
+    &:hover {
+        transition: .1s;
+        color: rgb(47, 47, 255);
+    }
+}
 .confirm {
     width: 100%;
     height: 44px;
@@ -85,10 +91,9 @@
     color: white;
     font-weight: 400;
     font-size: 18px;
-}
-
-.confirm:hover {
-    transition: .2s;
-    background-color: rgb(47, 47, 255);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.112);
+    &:hover {
+        transition: .2s;
+        background-color: rgb(47, 47, 255);
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.112);
+    }
 }
