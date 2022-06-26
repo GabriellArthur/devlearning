@@ -5,7 +5,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 40px 100px 40px 100px;
+        margin: 40px;
     }
     
     .title {
@@ -17,16 +17,16 @@
     }
     
     .line__title {
-        margin: 0px 10px 0px 0px;
-        background-color: #6868684d;
+        background-color: #68686827;
         width: 100%;
         height: 1px;
     }
 
 
 
-    button {
+    .button, .button_delete {
         margin-top: 2rem;
+        margin-right: 2rem;
         height: 56px;
         width: 210px;
      
@@ -61,56 +61,63 @@
         }
     }
 
+    .button_delete {
+        background-color: rgb(107, 1, 1);
+        color: white;
+
+        &:hover {
+            background: rgb(175, 2, 2);
+            color: var(--white);
+            filter: brightness(0.9);
+          }
+    }
+
+
+
     .header__class {
         margin: 3% 10% 3% 10%;        
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    }
+
+    .button__new {
+        margin-top: 2rem;
+        height: 46px;
+        width: 210px;
+     
+        border: 3px solid;
+        border-radius: 10px;
+        background: rgb(50, 50, 50);
+      
+        color: var(--white);
+      
+        font-size: 14px;
+        font-weight: 800;
+        font-family: 'Roboto';
+        line-height: 16px;
+        letter-spacing: 0.055em;
+        transition: 0.4s;
+      
+        animation: border 0.5s infinite;
+      
+        @keyframes border {
+          0% {
+            border: 1px solid rgb(50, 50, 50);
+          }
+          100% {
+            border: 1px solid rgb(50, 50, 50);
+          }
         }
-        li {
-            .button__new {
-                margin-top: 2rem;
-                height: 46px;
-                width: 210px;
-             
-                border: 3px solid;
-                border-radius: 10px;
-                background: rgb(50, 50, 50);
-              
-                color: var(--white);
-              
-                font-size: 14px;
-                font-weight: 800;
-                font-family: 'Roboto';
-                line-height: 16px;
-                letter-spacing: 0.055em;
-                transition: 0.4s;
-              
-                animation: border 0.5s infinite;
-              
-                @keyframes border {
-                  0% {
-                    border: 1px solid rgb(50, 50, 50);
-                  }
-                  100% {
-                    border: 1px solid rgb(50, 50, 50);
-                  }
-                }
-              
-                &:hover {
-                  background: rgb(56, 56, 56);
-                  color: var(--white);
-                  filter: brightness(0.9);
-                }
-            }
+      
+        &:hover {
+          background: rgb(56, 56, 56);
+          color: var(--white);
+          filter: brightness(0.9);
         }
     }
 
     .list__class {
         margin: 0px 10% 0px 10%;
         max-width: 100vw;
+        padding-bottom: 5rem;
 
         .item_list {
             display: flex;
@@ -140,25 +147,41 @@
                     max-width: 650px;
                 }
             }
+
+            @media (max-width: 700px) {
+              .img__class {
+                width: 0vw;
+                img {
+                  display: none;
+                }
+              }
+            }
+
+            @media (min-width: 700px) {
+              .img__class {
+                width: 30vw;
+                img {
+                  object-fit: cover;
+                  width: 300px;
+                  height: 200px;
+                  border-radius: 10px;
+                }
+              }
+            }
             .img__class {
                 padding: 1rem;
-                width: 30vw;
                 display: flex;
                 align-items: center;
-                img {
-                    object-fit: cover;
-                    width: 300px;
-                    height: 200px;
-                    border-radius: 10px;
-                }
             }
         }
-    }    
+    }
     
     .footer{
+        width: 100%;
         padding: 20px;  
         display: flex;
         justify-content: center;
+        bottom: 0;
     }
     .footer h2{
         font-size: 1rem;

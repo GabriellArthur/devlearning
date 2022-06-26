@@ -22,7 +22,6 @@ export default function Home() {
                </aside>
             </main>
          </body>
-         <div className={styles.linha}></div>
          <footer className={styles.footer}>
             <h2>Desenvolvido por Luiz Claudio, Yaman Augusto, Gabriel Arthur, Douglas Figueroa</h2>
          </footer>

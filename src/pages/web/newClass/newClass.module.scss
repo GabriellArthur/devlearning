@@ -23,8 +23,7 @@
 .box__media {
     display: grid;
     justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem 0rem;
 }
 
 
@@ -39,7 +38,6 @@
 
 .media__btn {
     margin: 1rem;
-    display: none;
 }
 
 .media button {
@@ -77,26 +75,26 @@
         border-radius: 5px;
         font-size: 20px;
         font-family: Roboto;
-        font-weight: 400;
+        font-weight: 500;
+        margin-top: 1rem;
     }
 }
 
-
-.title {
+.name, .title {
     min-width: 100%;
     max-width: 100%;
     min-height: 45px;
-    max-height: 45px;
     border: none;
     outline: none;
     padding: 10px;
     border-radius: 5px;
     font-size: 18px;
     font-family: Roboto;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: 500;
     color: black;
+    margin: 1rem 0;
 }
+
 .subtitle {
     min-width: 100%;
     max-width: 100%;
@@ -108,8 +106,9 @@
     border-radius: 5px;
     font-size: 18px;
     font-family: Roboto;
-    font-weight: 400;
+    font-weight: 500;
     color: black;
+    margin: 1rem 0;
 }
 
 .box__button {

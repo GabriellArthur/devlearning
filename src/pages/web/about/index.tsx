@@ -12,9 +12,10 @@ export default function About() {
                <section className={styles.hero}>
                   <h1>Bem vindo ao DEV LEARNING</h1>
                   <span>Um pouco sobre o desenvolvimento do site</span>
-                  <p>Este site foi construido por alunos de ciencias da computacao da universidade catolica, com ituito de ajudar outros alunos na sua carreira, aqui veremos o basico em logica de programacao, html, css e java script, para que voce possa crescer na sua carreira</p>
+                  <p>Este site foi construído por alunos de ciências da computação da universidade católica, com objetivo de ajudar outros alunos na sua carreira, aqui veremos o básico em lógica de programação, html, css e java script, para você poder crescer na sua carreira</p>
+                  <p>Crie suas próprias aulas e ajude a comunidade!</p>
                   <p>Tecnologias usadas:</p>
-                  <p>React.js, Next.js, Node.js, MongoDB, Figma</p>
+                  <p>React.js, Next.js, Node.js, Axios, MongoDB, Figma</p>
                   <a href="/"><button className={styles.button}>Voltar</button></a>
                </section>
                <aside className={styles.lottie}>

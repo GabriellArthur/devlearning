@@ -3,19 +3,31 @@
   border-bottom: 1px solid var(--gray-800);
 }
 .logo {
-  width: 230px;
-}
-
-.logo:hover {
   cursor: pointer;
+
+  @media (min-width: 500px) {
+    width: 230px;
+ }
+
+ @media (max-width: 500px) {
+  width: 55px;
+  object-fit: cover;
+  object-position: 10px 0px;
+ }
 }
 
 .headerContent {
   height: 5rem;
-  padding: 0 4rem;
-
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 800px) {
+    padding: 0 4rem;
+ }
+
+ @media (max-width: 800px) {
+  padding: 0 1rem;
+ }
 
   nav {
     // padding: 0 10rem;
@@ -24,10 +36,15 @@
       height: 5rem;
       overflow-y: hidden;
    }
+
+   @media (max-width: 800px) {
+    margin-right: 0;
+   }
     margin-right: 2rem;
     height: 5rem;
 
     a {
+      cursor: pointer;
       display: inline-block;
       position: relative;
       padding: 0 0.5rem;
